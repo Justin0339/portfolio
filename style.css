@@ -1,0 +1,201 @@
+/* Smooth scroll when clicking nav links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #212121;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Navigation */
+nav a {
+  color: #e0e0e0;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+}
+
+nav a:active {
+  background-color: #555;
+  transform: scale(0.95);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px;
+  background: radial-gradient(circle at left top, #1c1c1c, #000);
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 90%;
+  color: #ccc;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 20px;
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 50%;
+  background: radial-gradient(#555, #000);
+  margin-top: 30px;
+}
+
+/* Social Icons */
+.socials {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.socials img {
+  width: 24px;
+  margin: 0 5px;
+}
+
+/* Skills & Education Section */
+#skills-education {
+  background: #1a1a1a;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+
+.skills-edu-text {
+  max-width: 600px;
+}
+
+.skills-edu-text h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.skills-edu-text ul {
+  list-style: disc;
+  margin: 10px auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.skills-edu-text p {
+  margin: 5px 0 15px;
+}
+
+.skills-edu-image img {
+  width: 300px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+/* Project Container */
+.project-container {
+  border: 2px solid #fff;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 400px;
+  border-radius: 12px;
+  background-color: #111;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 225, 0.2);
+}
+
+.project-container article,
+.project-container h3,
+.project-container p {
+  margin-bottom: 30px;
+  max-width: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.project-container img,
+.project-container video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
